@@ -1,4 +1,3 @@
-```markdown
 # Pollyglot
 
 Pollyglot is a web-based translation application that allows users to translate text into French, German, or Spanish using OpenAI's GPT-3.5 model.
@@ -70,4 +69,3 @@ If you want to contact me, you can reach me at `your_email@example.com`.
 
 - OpenAI for providing the GPT-3.5 model used for translations.
 - Flag icons from https://flagicons.lipis.dev/
-```
