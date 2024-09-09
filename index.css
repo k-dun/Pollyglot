@@ -1,0 +1,278 @@
+html, body {
+  margin: 0;
+	padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #FCFAFF;
+}
+
+body {
+  max-width: 500px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+header img {
+  max-width: 500px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Panels */
+
+.translation-input-div {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+#translation-input {
+  border: 1px solid #303030;
+  border-radius: 5px;
+  margin-left: -10px;
+}
+
+.translation-input-label {
+  height: 0px;
+}
+
+.action-panel, .output-panel {
+  line-height: 1.4em;
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1.5em 2em;
+}
+
+.output-panel {
+  height: 80%;
+  display: none;
+  justify-content: flex-start;
+  padding: 1em 1.5em;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+.loading-panel {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/* text */
+
+h2 {
+  text-align: center;
+  font-weight: 400; 
+  margin-top: -26px;
+  background-color: #FCFAFF;
+  padding: 0 10px;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+p.tag-line {
+  font-family: 'Comic Neue';
+  font-weight: 700;
+  font-size: 18px;
+}
+
+#language-choice {
+  font-size: 20px;
+}
+
+#language-choice input {
+  font-size: 18px;
+}
+
+.output-pretranslation-div, .output-translation-div {
+  width: 85%;
+  border: 1px solid #303030;
+  border-radius: 5px;
+}
+
+.output-pretranslation-div {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-right: auto;
+  background-color: #f2f2f2;
+}
+
+.output-translation-div {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: auto;
+  background-color: #46ff90;
+}
+
+.output-pretranslation-p {
+  padding: 10px;
+  margin: 5px 5px;
+  width: 100%;
+}
+
+.output-translation-p {
+  padding: 10px;
+  margin: 5px 5px;
+  width: 100%;
+}
+
+/* controls */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  text-align: center;
+  padding: .43em;
+  font-size: 15px;
+  margin-bottom: 1em;
+  width: 80%;
+}
+
+.form-input-control {
+  display: flex;
+  width: 70%;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  padding: 1em;
+  border: none;
+}
+
+#language-choice-form {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Buttons */
+
+.add-text-btn {
+  display: flex;
+  align-items: center;
+  background-color: #FCFAFF;
+  font-size: 3em;
+  padding: 0 .35em;
+  cursor: pointer;
+  border: 2px solid #303030;
+  border-radius: 5px;
+}
+
+.add-text-svg {
+  width: 14px;
+}
+
+.flag-svg {
+  max-width: 16px;
+}
+
+#translation-input-form {
+  display: flex;
+  width: 100%;
+  align-content: center;
+}
+
+.generate-translation-btn {
+  width: 100%;
+  padding: 1em 1.5em;
+  cursor: pointer;
+  font-family: 'Poppins', sans;
+  border: 1px solid #303030;
+  border-radius: 5px;
+  border-left: none;
+  background-color: #46ff90;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .09em;
+  font-size: 105%;
+}
+
+/* ticker display (ensure comma separated) */
+
+.translation {
+  margin: 0 .1em;
+  content: '';
+  border: 2px solid #46ff90;
+  border-radius: 5px;
+}
+
+/* stop ugly scroll bar on some browsers */
+.output-panel p::-webkit-scrollbar {
+  display: none;
+}
+
+.output-panel p::-moz-scrollbar {
+  display: none;
+}
+
+/* iPhone X styling*/
+
+.iphone-x {
+  position: relative;
+  margin: 40px auto;
+  margin-bottom: 20px;
+  width: 320px;
+  height: 680px;
+  background-color: #FCFAFF;
+  border-radius: 40px;
+  box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111;
+}
+.iphone-x:before,
+.iphone-x:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.iphone-x:before {
+  z-index: 3000;
+  top: 0px;
+  width: 56%;
+  height: 30px;
+  background-color: #1f1f1f;
+  border-radius: 0px 0px 40px 40px;
+}
+.iphone-x:after {
+  bottom: 7px;
+  width: 140px;
+  height: 4px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+.iphone-x .screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 40px;
+  overflow: auto;
+}
