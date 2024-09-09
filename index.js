@@ -129,7 +129,3 @@ function renderTranslation(output) {
     }
     outputArea.style.display = 'flex';
 }
-
-async function generatePronunciation () {
-    
-}
