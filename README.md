@@ -43,7 +43,7 @@ Before you begin, ensure you have met the following requirements:
 1. Open `index.html` in your web browser.
 2. Enter the text you want to translate in the input field.
 3. Select the target language (French, German, or Spanish) by clicking on the corresponding flag.
-4. Click the translate button (arrow down icon) to generate the translation.
+4. Click the translate button (arrow up icon) to generate the translation.
 5. The original text and its translation will appear in the output panel.
 
 ## Project Structure
@@ -63,7 +63,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Contact
 
-If you want to contact me, you can reach me at `your_email@example.com`.
+If you want to contact me, you can reach me at `hi@kdun.dev`.
 
 ## Acknowledgements
 
